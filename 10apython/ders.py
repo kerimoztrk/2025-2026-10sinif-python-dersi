@@ -141,28 +141,154 @@ print("Merhaba " + isim + "!")
 
 #not karşılatırma örneği
 
-not_ornek= 70
+# not_ornek= 70
 
-print("Notunuz 70' e eşitmi ?",(not_ornek==70))
-print("Notunuz 70' den farklı mı ?",(not_ornek!=70))
-print("Notumuz 80 den küçük mü", not_ornek<80)
-print("Notumuz 80 den büyük mü ", not_ornek>80)
-print("Notumzu 80 den küçük veya 80 eşit mi?",not_ornek<=80)
-print("Notumzu 80 den büyük veya 80 eşit mi?",not_ornek>=80)
-
-
-#ürün fiyat karşılatırma örneği
-
-fiyat=200
-indirim=150
-
-print(fiyat>indirim) # True (indirim fiyatından pahalı)
-print(fiyat<=150) #False (150 tlden pahalı oldugunu anlatır)
-print(fiyat!= indirim)#True (Fiyat ile indirim eşit değil)
+# print("Notunuz 70' e eşitmi ?",(not_ornek==70))
+# print("Notunuz 70' den farklı mı ?",(not_ornek!=70))
+# print("Notumuz 80 den küçük mü", not_ornek<80)
+# print("Notumuz 80 den büyük mü ", not_ornek>80)
+# print("Notumzu 80 den küçük veya 80 eşit mi?",not_ornek<=80)
+# print("Notumzu 80 den büyük veya 80 eşit mi?",not_ornek>=80)
 
 
-yas=15
+# #ürün fiyat karşılatırma örneği
 
-print(yas>18) #False (yani yetişkibn birey değildir)
-print(yas<18) #True ( yani yetişkin birey değil yası 18 den küçüktür)
-print(yas==15 ) #True (öğrencin yaşı 15 tir)
+# fiyat=200
+# indirim=150
+
+# print(fiyat>indirim) # True (indirim fiyatından pahalı)
+# print(fiyat<=150) #False (150 tlden pahalı oldugunu anlatır)
+# print(fiyat!= indirim)#True (Fiyat ile indirim eşit değil)
+
+
+# yas=15
+
+# print(yas>18) #False (yani yetişkibn birey değildir)
+# print(yas<18) #True ( yani yetişkin birey değil yası 18 den küçüktür)
+# print(yas==15 ) #True (öğrencin yaşı 15 tir)
+
+
+
+# HATA türleri
+
+# 1. Söz dizimi hatası (Syntax Error) dilin kuralları gereği uyulamsı gereken kurallar ihlal edilirse ortaya çıkar
+
+#print("merhaba dünya)
+
+
+# 2. Çalışma zamanı hatası (Runtime Error) program çalışırken ortaya çıkan hatalardır. Örneğin sıfıra bölme hatası
+
+#sayi= int("merhaba")
+
+
+#3. Mantık hatası (Logical Error) program çalışır ancak beklenen sonucu vermez. Örneğin yanlış işlem 
+
+# vize=40
+# final=60
+
+# ortalama= (vize*0.40) + (final*0.60)  # Doğru formül vize ınavı çarpı 40 bölü 100 işlemi yapılıyor final için ise çarpu 60 bölü 100
+# print("Ortalama:",ortalama)
+
+
+# istisna (Exception)  0'a bölünme hataları bunu kapsar
+
+# sayi1=10
+# sayi2=0
+
+# print(sayi1/sayi2)
+
+
+# Koşullu İfadeler (if, elif, else)
+
+#örnek 1 : şifre kontrol
+
+# sifre= input("Lütfenm şifrenizi giriniz:")
+
+# if sifre == "parola123":
+#     print("Şifre doğru, giriş başarılı.")
+# else:
+#     print("Şifre yanlış, giriş başarısız.")       
+
+
+#örnek 2 : Başkent ülke kontrolü
+
+# baskent= input("Lütfen bir şehir ismi giriniz:")
+
+# ulke= input("Lütfen bir ülke ismi giriniz:")
+
+# if(baskent=="Ankara" and ulke=="Türkiye"):
+#     print("Doğru! Ankara Türkiye'nin başkentidir.")
+# else: print("başarısız")
+
+#örnek 3 : sayi tahmini uygulaması
+
+# sayi=input("Lütfe tahmin ettiğiniz sayıyı giriniz")
+
+# if(sayi=="3"):
+#     print("Tahmin ettiğiniz sayı doğrudur")
+# else:
+#     print("Tahmininiz yanlış tekrar deneyin")
+
+
+#örnek 4 not ortalpması hesabı
+
+# sinav1=float(input("1.sınav notunu girin:"))
+# sinav2=float(input("2.sınav notunu girin:"))
+# sinav3=float(input("3.sınav notunu girin:"))
+
+# ortalama=(sinav1+sinav2+sinav3)/3
+# print("Sınavların ortalamsı =",ortalama)
+
+
+# if( 0<ortalama<50):
+#     sonuc="Sonuc Rezalet"
+# elif (50<ortalama<70):
+#     sonuc="Sonuc Ortalana"
+# elif (70<ortalama<85):
+#     sonuc="İyi"
+# else: sonuc="Mükkemmel"
+
+# print(sonuc)
+
+#İÇ içe if yapısı kullanarak şifre kontorlü uygulaması
+
+
+# sifre=input("Şifreyi giriniz:")
+
+# if sifre == "12a34":
+#     print("şifre doğru")
+
+#     yetki=input("Yetkiniz var mı ? (evet/hayır):")
+
+#     if yetki=="evet":
+#         print("Giriş başarılı")
+#     else:
+#         print("Yetkiniz yok giriş başarısız")
+# else:
+#     print("Şifre yanlış girildi.")
+
+
+# ortalama= float(input("lütfen ortalamanızı girin:"))
+# devamsizlik= int(input("Lütfen devamsızlık sayınızı girin:"))
+
+# if ortalama>=50:
+#     if devamsizlik<=10:
+#         print("Tebrikler dersten geçtiniz!")
+#     else:
+#         print("Devamsızlıktan kaldın!")
+# else:
+#     print("Nottan kaldın!")
+
+
+yas= int(input("Lütfen yaşınızı giriniz:"))
+
+if yas>=18:
+    print("giriş yapabilirsin")
+else:
+    izin=input("Veli izni varmo (evet/hayır)")
+
+    if izin=="evet":
+        print("Veli izniyle giriş yapıldı")
+    else:
+        print("giirş yapılamaz")
+
