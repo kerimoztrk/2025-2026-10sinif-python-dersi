@@ -280,15 +280,67 @@ print("Merhaba " + isim + "!")
 #     print("Nottan kaldın!")
 
 
-yas= int(input("Lütfen yaşınızı giriniz:"))
+# yas= int(input("Lütfen yaşınızı giriniz:"))
 
-if yas>=18:
-    print("giriş yapabilirsin")
-else:
-    izin=input("Veli izni varmo (evet/hayır)")
+# if yas>=18:
+#     print("giriş yapabilirsin")
+# else:
+#     izin=input("Veli izni varmo (evet/hayır)")
 
-    if izin=="evet":
-        print("Veli izniyle giriş yapıldı")
-    else:
-        print("giirş yapılamaz")
+#     if izin=="evet":
+#         print("Veli izniyle giriş yapıldı")
+#     else:
+#         print("giirş yapılamaz")
 
+#bir sayıyı for döngüsü kullanarak 5 kere yazdırma işlemi
+# for sayac in range(1,11):
+#     print(5)
+
+# for sayac in range(1,1001):
+#     print(sayac)
+
+# for a in range(20,4,-2):
+#     print(a)
+
+# for a in range(10,110,10):
+#     print(a)
+
+
+# toplam=0
+
+# for i in range(1,11):
+#     toplam= toplam+i
+# print("Toplam:",toplam)
+
+
+# for i in range(0,20,3):
+#     print(i)
+
+
+# toplam2=0
+# for sayi in range(0,20,3):
+#     toplam2=toplam+sayi
+# print("Toplam:",toplam)
+
+
+# for i in range(1,11):
+#     if i%2==0:
+#         print(i, "sayısı çift sayıdır.")
+#     else:
+#         print(i, "sayısı tek sayıdır.")
+
+#LİSTELER 
+# meyveler=["elma","armut","muz","çilek"]
+# print(meyveler)
+# print(meyveler[0]) # elma
+# print(meyveler[1]) # armut
+# print(meyveler[2]) # muz
+# print(meyveler[-1]) # çilek
+# print(meyveler[-2]) # muz
+
+#for döngüsü kullanarak meyveleri tek tek yazdırma işlemi
+# for a in meyveler:
+#     print(a)
+
+for mehmet in range(20,4,-2):
+    print(mehmet)
