@@ -342,5 +342,169 @@ print("Merhaba " + isim + "!")
 # for a in meyveler:
 #     print(a)
 
-for mehmet in range(20,4,-2):
-    print(mehmet)
+# for mehmet in range(20,4,-2):
+#     print(mehmet)
+
+
+# İç içe döngüler ve While döngüsü
+
+# for i in range(3):
+#     for j in range(3):
+#         print(i,j)       #dış döngü 3 kez çalışır. Her dış döngü çalıştıgında iç döngü tam tur döner yani 3 x 3 den 9 adet çıktı üretilir.
+
+
+# for i in range (1,6):
+#     for j in range(1,6):
+#         print(i*j,end="\t")
+#     print()
+
+
+# for i in range(2):
+#     for j in range(2):
+#         for k in range(2):
+#             print(i,j,k)
+
+
+# satir=int(input("Satır sayısı giriniz:"))
+
+# sutun=int(input("Sutun sayısı giriniz"))
+
+# for i in range(satir):
+#     for j in range(sutun):
+#         print("*", end=" ")
+#     print()
+
+
+
+
+# sayi=int(input("satır-sutun sayısı giriniz:"))
+# for i in range(1,sayi+1):
+#     print("*"*i)
+
+
+# WHİLE DÖNGÜSÜ
+
+# i=1
+
+# while i<=5:
+#     print(i)
+#     i+=1
+
+#sonsuz bir döngü örneği
+# while True:
+#     print("Çalışıyor")
+
+#While ile şifre Kontrolü örneği
+
+# sifre=""
+
+# while sifre != "1234":
+#     sifre=input("Şifre Griniz:")
+# print("Giriş Başarılı")
+
+
+# secim=0
+
+# while secim !=3:
+#     print("1- Sayıları Yazdır")
+#     print("2- Toplama")
+#     print("3- Çıkış")
+
+#     secim=int(input("Seçim:"))
+
+#     if secim==1:
+#         for i in range (1,6):
+#             print(i)
+        
+#     elif secim==2:
+#         toplam=0
+#         for i in range(3):
+#             sayi=int(input("Sayı:"))
+#             toplam +=sayi
+#         print("Toplam:",toplam)
+
+
+# sayi=int(input("Sayi giriniz"))
+
+# faktoriyel=1
+
+# while sayi>0: 
+#     faktoriyel *= sayi
+#     sayi -=1
+
+# print("Sonuc:",faktoriyel)
+
+# hedef=7
+# tahmin=-1
+
+# while tahmin != hedef:
+#     tahmin=int(input("Tahmininiz:"))
+
+#     if tahmin<hedef:
+#         print("Daha büyük bir sayı girin")
+#     elif tahmin>hedef:
+#         print("Daha küçük bir sayı girin")
+    
+# print("Tebrikler Bildiniz.")
+
+
+# toplam=0
+
+# for i in range(5):
+#     sayi=int(input("Sayı Gir"))
+
+#     while sayi%2 != 0:
+#         sayi=int(input("çift Sayı Gir"))
+    
+#     toplam+=sayi
+
+# print("Toplam:",toplam)
+
+#Döngü sonlandırma konusu
+
+# for i in range(10):
+#     if i==5:
+#         break
+#     print(i)
+
+
+# dogruSifre="12345"
+
+# for hak in range(3):
+#     sifre=input("Şifre Giriniz")
+
+#     if sifre==dogruSifre:
+#         print("Giriş Başarılı")
+#         break
+# else:
+#     print("Hakkınız doldu")
+
+
+# #çift sayıları atlama örneğiş
+
+# for i in range(1,21):
+#     if i%2==0:
+#         continue
+#     print(i)
+
+# #Tek sayıları atlama örneğiş
+
+# for i in range(1,21):
+#     if i%2==1:
+#         continue
+#     print(i)
+
+
+# for i in range(5):
+#     pass
+
+# ASal sayı kontrolü
+
+# sayi=int(input("sayı gir:"))
+
+# for i in range(2,sayi):
+#     if sayi%i ==0:
+#         print("Asal değil")
+#         break
+# else:
+#     print("Asal")
