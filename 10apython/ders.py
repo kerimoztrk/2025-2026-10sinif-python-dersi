@@ -508,3 +508,28 @@ print("Merhaba " + isim + "!")
 #         break
 # else:
 #     print("Asal")
+
+
+#Fonksiyonlar
+
+#fonksiyon tanımlama
+
+# def mesaj():
+#     print("Python programlama Öğreniyorum")
+    
+
+# mesaj() # fonksiyonu çağırma işlemi
+
+# #parametreli fonksiyon tanımlama
+# def selam_ver(isim):
+#     print("Merhaba",isim)
+
+
+# selam_ver("Ufuk") # "Ufuk" argümanını fonksiyona gönderiyoruz
+
+
+def topla(a,b):
+    sonuc= a+b
+    print("Toplam:",sonuc)
+
+topla(5,7) # 5 ve 7 argümanlarını fonksiyona gönderiyoruz
