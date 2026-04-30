@@ -1,3 +1,12 @@
+import math
+
+import time
+
+import random
+
+
+
+
 '''
 üç tane tek tırnak
  arasına yorum satırı çoklu 
@@ -528,8 +537,74 @@ print("Merhaba " + isim + "!")
 # selam_ver("Ufuk") # "Ufuk" argümanını fonksiyona gönderiyoruz
 
 
-def topla(a,b):
-    sonuc= a+b
-    print("Toplam:",sonuc)
+# def topla(a,b):
+#     sonuc= a+b
+#     print("Toplam:",sonuc)
 
-topla(5,7) # 5 ve 7 argümanlarını fonksiyona gönderiyoruz
+# topla(5,7) # 5 ve 7 argümanlarını fonksiyona gönderiyoruz
+
+
+
+
+# sayi= float(input("Sayı Giriniz:"))
+# karekok =math.sqrt(sayi)
+# print("Sayının karekökü:",karekok)
+
+
+# print("Başlıyor")
+
+# time.sleep(2) # 2 saniye bekleme işlemi
+# print(" w saniye sonra Bitti")
+
+
+# for i in range(5):
+#     print("Sayı: ",i)
+#     time.sleep(1) # Her sayıyı yazdırdıktan sonra 1 saniye bekler
+
+
+# for i in range(5,0,-1):
+#         print("Geri Sayım: ",i)
+#         time.sleep(1) # Her sayıyı yazdırdıktan sonra 1 saniye bekler
+    
+# print("Geri sayım tamamlandı!")
+
+    
+
+# sayi= random.randint(1,10)
+# print("Rastgele sayı:",sayi)
+
+
+# zar= random.randint(1,6)
+# print("Atılan Zar sonucu :  ",zar)
+
+
+# meyveler =["elma","armut","muz"]
+
+# secim= random.choice(meyveler)
+
+# print("Seçilen meyve :" , secim)
+
+
+
+# # liste =[1,2,3,4,5]
+
+# # random.shuffle(liste)
+# # print(liste)
+
+#sayı tahmin oyunu
+
+hedef= random.randint(1,10)
+
+tahmin=0
+
+
+while tahmin != hedef:
+        tahmin=int(input("1-10 arasında tahmin : "))
+
+
+        if tahmin <hedef:
+                print("Yukarı çık")
+        elif tahmin > hedef:
+                print("Aşağı in")
+
+print("Tebrikler bildiniz")    
