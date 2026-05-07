@@ -591,20 +591,88 @@ print("Merhaba " + isim + "!")
 # # random.shuffle(liste)
 # # print(liste)
 
-#sayı tahmin oyunu
+# #sayı tahmin oyunu
 
-hedef= random.randint(1,10)
+# hedef= random.randint(1,10)
 
-tahmin=0
-
-
-while tahmin != hedef:
-        tahmin=int(input("1-10 arasında tahmin : "))
+# tahmin=0
 
 
-        if tahmin <hedef:
-                print("Yukarı çık")
-        elif tahmin > hedef:
-                print("Aşağı in")
+# while tahmin != hedef:
+#         tahmin=int(input("1-10 arasında tahmin : "))
 
-print("Tebrikler bildiniz")    
+
+#         if tahmin <hedef:
+#                 print("Yukarı çık")
+
+
+#         elif tahmin > hedef:
+#                 print("Aşağı in")
+
+# print("Tebrikler bildiniz")    
+
+
+
+# def kare (sayi):
+#         return sayi**5
+# sonuc= kare(2)
+# print("Sonuç:",sonuc)
+
+
+# sayi2= int(input("Sayı Giriniz:"))
+
+# kare= pow(sayi2,4)
+# print(kare)
+
+# karekok= math.sqrt(sayi2)
+
+# print("Karekök:",karekok)
+
+
+# PArametre eksik gönderme hatası örneği
+
+# def topla(a,b):
+#     return a+b
+
+# print("Toplam:",topla(7)) #hata verir çünkü topla fonksiyonu iki parametre bekler ama biz sadece bir tane verdik
+
+# FAZLA PARAMETRE GÖNDERME HATASI ÖRNEĞİ
+
+# def selamver(isim):
+#     print("Merhaba",isim)
+
+# selamver("Milat","Ufuk") # hata verir çünkü selamver fonksiyonu sadece bir parametre bekler ama biz iki tane verdik
+
+#UYUMSUZ TÜR HATASI ÖRNEĞİ veri tipi hatası
+# def topla(a,b):
+#     return a+b
+
+# print("Toplam:",topla("ahmet",7)) # hata verir çünkü topla fonksiyonu iki parametre bekler ama biz bir string ve bir integer verdik bu da uyumsuz tür hatası verir
+
+
+# return ifadesi olmayan fonksiyon örneği
+
+# def topla(a,b):
+#     sonuc= a+b
+
+# print (topla(3,5)) # None döndürür çünkü topla fonksiyonu return ifadesi içermiyor ve bu nedenle hiçbir değer döndürmez. Bu durumda print fonksiyonu None değerini yazdırır.
+    
+
+# def yazdir():
+#     sayi=10
+
+# yazdir() 
+# print(sayi) # hata verir çünkü sayi değişkeni yazdir fonksiyonu içinde tanımlanmış ve fonksiyonun dışında erişilemez. Bu nedenle sayi değişkenine erişmeye çalıştığımızda NameError hatası oluşur.
+
+
+# global ve local karışıklıgı örneği
+
+sayi=5 # global değişken
+
+
+def degistir():
+    sayi=10     # local değişken, bu sayi sadece degistir fonksiyonu içinde geçerlidir ve global sayi değişkenini etkilemez
+    print("Fonksiyon içindeki sayı:",sayi)
+
+degistir() # Fonksiyon içindeki sayı: 10
+print("Fonksiyon dışındaki sayı:",sayi) # Fonksiyon dışındaki sayı: 5
