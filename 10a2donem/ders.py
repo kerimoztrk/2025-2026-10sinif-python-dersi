@@ -667,12 +667,86 @@ print("Merhaba " + isim + "!")
 
 # global ve local karışıklıgı örneği
 
-sayi=5 # global değişken
+# sayi=5 # global değişken
 
 
-def degistir():
-    sayi=10     # local değişken, bu sayi sadece degistir fonksiyonu içinde geçerlidir ve global sayi değişkenini etkilemez
-    print("Fonksiyon içindeki sayı:",sayi)
+# def degistir():
+#     sayi=10     # local değişken, bu sayi sadece degistir fonksiyonu içinde geçerlidir ve global sayi değişkenini etkilemez
+#     print("Fonksiyon içindeki sayı:",sayi)
 
-degistir() # Fonksiyon içindeki sayı: 10
-print("Fonksiyon dışındaki sayı:",sayi) # Fonksiyon dışındaki sayı: 5
+# degistir() # Fonksiyon içindeki sayı: 10
+# print("Fonksiyon dışındaki sayı:",sayi) # Fonksiyon dışındaki sayı: 5
+
+
+
+# sınav tekarar
+
+# def selam_ver():
+#     print("MErhaba Dünya")
+
+# selam_ver()
+
+
+# def selam_ver(isim):
+#     print("Merhaba", isim)
+
+
+# selam_ver("Ahmet")
+
+# selam_ver("ayşe")
+
+# def topla(a,b):
+#     return a+b
+
+# sonuc=topla(3,5)
+
+# print("Toplam :",sonuc)
+
+
+# print (math.sqrt(25))
+# print(math.pow(2,3))
+# print(math.pi)
+
+# print(abs(-15))
+# print(round(3,7))
+# print(round(3,2))
+
+
+
+# sayi=random.randint(1,10)
+
+# print(sayi)
+
+# meyveler=["elma","armut","erik"]
+
+# print(random.choice(meyveler))
+
+
+# for i in range(10):
+
+#     if i==5:
+#         break
+
+#     print(i)
+
+
+# for i in range(1,11):
+
+#     if i %2==0:
+#         continue
+
+#     print(i)
+
+    
+def karekok_hesapla(sayi):
+    return math.sqrt(sayi)
+
+rastgele_sayi = random.randint(1, 100)
+
+print("Rastgele sayı:", rastgele_sayi)
+
+time.sleep(1)
+
+sonuc = karekok_hesapla(rastgele_sayi)
+
+print("Karekök:", sonuc)
